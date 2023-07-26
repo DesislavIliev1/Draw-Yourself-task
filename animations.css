@@ -1,0 +1,89 @@
+
+/*hand shaking animation */
+@keyframes handshaking{
+    0% {
+        transform: rotate(0);
+}
+20% {
+    transform: rotate(45deg);
+}
+60% {
+    transform: rotate(-45deg);
+}
+80% {
+    transform: rotate(0);
+}
+}
+
+
+/*bouncing balls animation */
+@keyframes falling-bouncing-balls{
+    0%{
+        transform: translateY(-1000px);
+    }
+
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-30px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+/*human falling animation */
+@keyframes falling{
+    from{
+        transform: translateY(-600px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+/*eyes blinking animation*/
+@keyframes blink{
+    0%{
+        height: 20px;
+    }
+
+    10% {
+        height: 5px;
+    }
+
+    
+
+    20%{
+        height: 20px;
+
+    }
+    60%{
+        height: 20px;
+    }
+
+    70% {
+        height: 5px;
+    }
+
+    80%{
+        height: 20px;
+
+    }
+    100%{
+        height: 20px;
+    }
+
+    
+
+
+}

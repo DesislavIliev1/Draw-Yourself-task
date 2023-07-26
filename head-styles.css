@@ -1,0 +1,195 @@
+.head{
+    background: hsl(19,76% , 88%);
+    width: 150px;
+    height: 200px;
+    border-radius: 70% 70% 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* head shaking animation properties*/
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    
+}
+
+
+/* positioning eyes and brows*/
+.eyes, .brows{
+    position: absolute;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.eye{
+    background-color: white;
+    height:20px;
+    width: 40px;
+    border-radius: 100%;
+    border-top: 2px solid hsl(19, 46%, 68%);
+    border-bottom: 2px solid hsl(19, 46%, 68%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    /*eyes blinking animation properties */
+    animation: blink 4s  ease 2s infinite ;
+    
+    
+    
+}
+
+/* eye's iris*/
+.eye::before{
+    content:'';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #654321;
+    border-radius:100%;
+    margin-right: 7px;
+    margin-bottom: 4px;
+}
+
+/* eye's pupil*/
+.eye::after{
+    content:'';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius:100%;
+    margin-right: 10px;
+    margin-bottom: 6px;
+
+}
+
+.brow{
+    width: 40px;
+    height: 20px;
+    border-top: 6px solid hsl(27 33% 28%);
+    border-radius: 100%;
+    margin-bottom: 16px;
+    rotate: 2deg;
+}
+
+.nose{
+    position: absolute;
+    border: 3px solid hsl(19, 46%, 68%);
+    width: 20px;
+    height: 16px;
+    border-radius: 0 0 100% 100%;
+    border-top: none;
+    margin-top: 45px;
+
+}
+
+.mouth{
+    position: absolute;
+    width: 60px;
+    height: 26px;
+    margin-top: 100px;
+    border-bottom: 10px solid white;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.ears{
+    z-index: -1;
+    position: absolute;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ear{
+    width: 15px;
+    height: 40px;
+    background:hsl(19, 76%, 85%) ;
+    border: 2px solid hsl(19, 46%, 68%);
+    border-radius: 0 100% 100% 0;
+
+}
+
+/* making the secont ear reflex*/
+.ear:first-child{
+    border-radius: 100% 0 0 100%;
+
+
+}
+
+.beard{
+    position: absolute;
+    width:135px ;
+    height: 65px ;
+    background: #654321;
+    border-radius: 20% 20% 100% 100%;
+    margin-top: 135px;
+    
+}
+
+
+
+.hair{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background: #654321;
+    margin-bottom: 170px;
+    border-radius: 100% 100% 0 0 ;
+
+}
+
+.hair::before,
+.hair::after{
+    content:'';
+    position: absolute;
+    background-color:#654321;
+    height: 60px;
+    width: 6px;
+    margin-top: 50px;
+    border-radius: 30%;
+}
+
+.hair::after{
+    right: 0;
+}
+
+
+
+
+
+
+
+.neck{
+    z-index: -1;
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background:hsl(19, 76%, 85%) ;
+}
+
+ /*changing mouth form when hover over it(sad face)*/
+.head:hover > #mouth{
+    cursor: pointer;
+    border-top: 10px solid white;
+    border-bottom: none;
+    margin-top:130px;
+    
+
+    
+}
+
+/* head shaking animation when hover*/
+.head:hover{
+    transform: rotate(20deg);
+
+    
+}

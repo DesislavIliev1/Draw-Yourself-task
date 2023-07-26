@@ -1,0 +1,203 @@
+.chest{
+    z-index:2;
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    background:rgb(126, 131, 58);
+    margin-top: 390px;
+    border-radius: 10% 10% 0 0 ;
+}
+
+.body-deso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* making  */
+.chest::before{
+
+    content: '';
+    z-index: 1;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background: #17227e;
+    margin-top:305px;
+   
+    
+    
+
+}
+
+/* sizing logo on the shirt using container*/
+.container{
+    font-size: 7rem;
+   
+}
+
+/* custom parameters for logo */
+.logo{
+    position: absolute;
+    height: 100px;
+    z-index: 1;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: #000000;
+}
+
+
+.arms{
+    z-index: -1;
+    position: absolute;
+    width: 250px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.arm{
+    margin-top: 30px;
+    height: 350px; 
+    width: 30px;
+    background: rgb(126, 131, 58);
+    rotate: 45deg;
+
+}
+
+.arm:first-child{
+    rotate: -45deg;
+
+}
+
+.legs{
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    display: flex;
+    justify-content:space-between;
+    
+
+}
+
+.leg{
+    
+    height: 300px; 
+    width: 80px;
+    background: #17227e;
+    margin-top:950px;
+   
+
+    
+    
+
+}
+
+.feets{
+    z-index: -1;
+    position: absolute;
+    width: 320px;
+    display: flex;
+    justify-content:space-between;
+    
+
+
+}
+
+.feet{
+    height: 50px;
+    width: 140px;
+    background: #333;
+    border-radius: 0 50% 0 0;
+    margin-top: 1200px;
+
+}
+
+.feet:first-child{
+    border-radius: 50% 0 0 0;
+
+}
+
+.hands{
+    z-index: -1;
+    position: absolute;
+    width: 530px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.hand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background:hsl(19, 76%, 85%) ;
+    border-radius: 80%;
+    margin-bottom: 230px;
+    
+}
+
+.finger-1, .finger-2,
+.finger-3,
+.finger-4,
+.finger-5{
+    position: absolute;
+    width: 12px;
+    background:hsl(19, 76%, 85%) ;
+    border-radius: 100% 100% 0 0;
+    
+}
+
+.finger-1{
+    height: 35px;
+    margin-bottom: 50px;
+    margin-left: 58px;
+    rotate:40deg;
+}
+.finger-2{
+    height: 50px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+    rotate: 10deg;
+    
+
+}
+.finger-3{
+    height: 60px;
+    margin-bottom: 70px;
+    margin-left: 5px;
+   
+}
+.finger-4{
+    height: 50px;
+    margin-bottom: 70px;
+    margin-right: 23px;
+    rotate: -5deg;
+
+    }
+
+.finger-5{
+    height: 40px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    rotate:-15deg;
+}
+
+/*changing logo color when hover over it*/
+.logo:hover {
+    cursor:pointer;
+    color: white;
+    
+}
+
+/*hand shaking animation properties */
+.left-hand{
+    animation: handshaking 3s linear 2s infinite ;
+}
+
+/*changing feet color when hover over it */
+.feet:hover {
+    cursor: pointer;
+    background-color: red;
+}
